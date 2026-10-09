@@ -9,8 +9,7 @@ const swaggerDefinition = {
   },
   tags: [
     { name: 'Autenticación', description: 'Registro e inicio de sesión de usuarios' },
-    { name: 'Categorías', description: 'Gestión de categorías de productos' },
-    { name: 'Productos', description: 'Gestión de productos' },
+    { name: 'Personas', description: 'Gestión del árbol genealógico y parentesco familiar' },
   ],
   servers: [
     {

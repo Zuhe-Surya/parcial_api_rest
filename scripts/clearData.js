@@ -10,13 +10,10 @@ const run = async () => {
 
     const db = mongoose.connection.db;
 
-    const productosDel = await db.collection('productos').deleteMany({});
-    console.log(`🗑️  Productos eliminados: ${productosDel.deletedCount}`);
+    const personasDel = await db.collection('personas').deleteMany({});
+    console.log(`🗑️  Personas eliminadas: ${personasDel.deletedCount}`);
 
-    const categoriasDel = await db.collection('categorias').deleteMany({});
-    console.log(`🗑️  Categorias eliminadas: ${categoriasDel.deletedCount}`);
-
-    console.log('✅ Colecciones vaciadas. Base de datos en estado predeterminado.');
+    console.log('✅ Colección vaciada. Base de datos lista para un nuevo árbol familiar.');
   } catch (err) {
     console.error('❌ Error:', err.message);
   } finally {
